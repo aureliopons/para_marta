@@ -25,7 +25,7 @@ import barra from './barra.vue'<template>
     </f7-toolbar>
     <!-- Page content-->
     <f7-block strong>
-      <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
+      <p> holi This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
 
       <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
 
