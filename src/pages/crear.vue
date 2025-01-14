@@ -1,7 +1,7 @@
 <template>
-  <f7-page name="about">
-    <f7-navbar title="About" back-link="Back"></f7-navbar>
-    <f7-block-title>About </f7-block-title>
+  <f7-page name="crear">
+    <f7-navbar title="Crear Evento" back-link="Back"></f7-navbar>
+    <f7-block-title>Crear Evento</f7-block-title>
     <f7-block strong>
       <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
       <p>Laudantium neque magnam vitae nemo quam commodi, in cum dolore obcaecati laborum, excepturi harum, optio qui, consequuntur? Obcaecati dolor sequi nesciunt culpa quia perspiciatis, reiciendis ex debitis, ut tenetur alias.</p>

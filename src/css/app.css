@@ -1,41 +1,78 @@
+:root {
+  --f7-theme-color: #00315F; 
+
+  --f7-toolbar-bg-color: #00315F; /* Toolbar background color */
+  --f7-toolbar-link-color: #ffffff; /* Toolbar icon color */
+  --f7-toolbar-link-active-color: #fff; /* Toolbar active icon color */
+
+  --f7-page-bg-color: #ffffff; /* Set your desired background color */
+  --f7-navbar-bg-color: #ffffff; /* Set your desired navbar background color */
+  --f7-appbar-bg-color: #ffffff; /* Set your desired appbar background color */
+
+
+  --f7-button-border-radius: 40px;
+}
+
+/*https://fonts.google.com/icons*/
+
 /* iOS Cordova Tweak */
 .device-cordova.device-ios {
   height: 100vh;
 }
 
+/* Your app custom styles here */
 html, body {
   width: 100vw;
   height: 100vh;
 }
 
-/* Left Panel right border when it is visible by breakpoint */
-.panel-left.panel-in-breakpoint:before {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  background: rgba(0,0,0,0.1);
-  content: '';
-  z-index: 6000;
+.toolbar {
+  background-color: var(--f7-toolbar-bg-color);
 }
 
-/* Hide navbar link which opens left panel when it is visible by breakpoint */
-.panel-left.panel-in-breakpoint ~ .view .navbar .panel-open[data-panel="left"] {
-  display: none;
+.toolbar .tab-link {
+  color: var(--f7-toolbar-link-color);
 }
 
-/*
-  Extra borders for main view and left panel for iOS theme when it behaves as panel (before breakpoint size)
-*/
-.ios .panel-left:not(.panel-in-breakpoint).panel-in ~ .view-main:before,
-.ios .panel-left:not(.panel-in-breakpoint).panel-closing ~ .view-main:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  background: rgba(0,0,0,0.1);
-  content: '';
-  z-index: 6000;
+.toolbar .tab-link-active {
+  color: var(--f7-toolbar-link-active-color);
 }
+
+/* Override Framework7 input styles to use standard input fields */
+.input input, .input textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.input input:focus, .input textarea:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.block-strong::before,.block-strong::after{
+  display:none!important;
+}
+
+
+/*colores de apoyo*/
+
+.white{
+  color: white;
+}
+
+.blue{
+  color: #00315F;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-blue{
+  background-color: #00315F;
+}
+

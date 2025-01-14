@@ -2,28 +2,15 @@
   <f7-app v-bind="f7params" >
 
   <!-- Left panel with cover effect when hidden -->
-  <f7-panel left cover theme-dark :visible-breakpoint="960">
+  <f7-panel left cover :visible-breakpoint="960">
     <f7-view>
-      <f7-page>
-        <f7-navbar title="Left Panel"></f7-navbar>
-        <f7-block-title>Left View Navigation</f7-block-title>
-        <f7-list>
-          <f7-list-item link="/left-page-1/" title="Left Page 1"></f7-list-item>
-          <f7-list-item link="/left-page-2/" title="Left Page 2"></f7-list-item>
-        </f7-list>
-        <f7-block-title>Control Main View</f7-block-title>
-        <f7-list>
-          <f7-list-item link="/about/" view=".view-main" panel-close title="About"></f7-list-item>
-          <f7-list-item link="/form/" view=".view-main" panel-close title="Form"></f7-list-item>
-          <f7-list-item link="#" view=".view-main" back panel-close title="Back in history"></f7-list-item>
-        </f7-list>
-      </f7-page>
+      <menu-izdo></menu-izdo>
     </f7-view>
   </f7-panel>
 
 
   <!-- Right panel with reveal effect-->
-  <f7-panel right reveal theme-dark>
+  <f7-panel right cover>
     <f7-view>
       <f7-page>
         <f7-navbar title="Right Panel"></f7-navbar>
@@ -38,7 +25,7 @@
 
 
     <!-- Popup -->
-    <f7-popup id="my-popup">
+    <f7-popup id="filter-popup">
       <f7-view>
         <f7-page>
           <f7-navbar title="Popup">

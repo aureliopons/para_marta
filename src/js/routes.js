@@ -1,36 +1,49 @@
 
+import Ayuda1Page from '../pages/ayuda-1.vue';
+import Ayuda2Page from '../pages/ayuda-2.vue';
+import Lateral from '../components/lateral.vue';
+import Notificaciones from '../components/notificaciones.vue';
+import Filtros from '../components/filtros.vue';
+
 import HomePage from '../pages/home.vue';
+import EventoPage from '../pages/evento.vue';
+import PerfilPage from '../pages/perfil.vue';
+import CrearPage from '../pages/crear.vue';
+
+import LoginPage from '../pages/login.vue';
+import IniciarSesionPage from '../pages/iniciar_sesion.vue';
+import RegistrarsePage from '../pages/registrarse.vue';
+import CategoriasPage from '../pages/categorias.vue';
+import GraciasPage from '../pages/gracias.vue';
+
 import AboutPage from '../pages/about.vue';
 import FormPage from '../pages/form.vue';
-
-import LeftPage1 from '../pages/left-page-1.vue';
-import LeftPage2 from '../pages/left-page-2.vue';
 import DynamicRoutePage from '../pages/dynamic-route.vue';
 import RequestAndLoad from '../pages/request-and-load.vue';
 import NotFoundPage from '../pages/404.vue';
 
-var routes = [
-  {
-    path: '/',
-    component: HomePage,
-  },
-  {
-    path: '/about/',
-    component: AboutPage,
-  },
-  {
-    path: '/form/',
-    component: FormPage,
-  },
+var routes = [  
+  { path: '/ayuda-1/',        component: Ayuda1Page },
+  { path: '/ayuda-2/',        component: Ayuda2Page },
+  { path: '/lateral/',        component: Lateral },
+  { path: '/notificaciones/', component: Notificaciones },
+  { path: '/filtros/',        component: Filtros },
+  
+  { path: '/home/',           component: HomePage },
+  { path: '/evento/',         component: EventoPage },
+  { path: '/perfil/',         component: PerfilPage },
+  { path: '/crear/',          component: CrearPage },
 
-  {
-    path: '/left-page-1/',
-    component: LeftPage1,
-  },
-  {
-    path: '/left-page-2/',
-    component: LeftPage2,
-  },
+  { path: '/login/',          component: LoginPage },
+  { path: '/iniciar/',        component: IniciarSesionPage },
+  { path: '/registro/',       component: RegistrarsePage },
+  { path: '/categorias/',     component: CategoriasPage },
+  { path: '/gracias/',        component: GraciasPage },
+
+
+  { path: '/',  component: HomePage,   },
+  { path: '/about/', component: AboutPage, },
+  { path: '/form/', component: FormPage, },
   {
     path: '/dynamic-route/blog/:blogId/post/:postId/',
     component: DynamicRoutePage,

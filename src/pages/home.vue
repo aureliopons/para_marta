@@ -1,20 +1,27 @@
-<template>
+
+import barra from './barra.vue'<template>
   <f7-page name="home">
     <!-- Top Navbar -->
-    <f7-navbar large :sliding="false">
-      <f7-nav-left>
-        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="left"></f7-link>
-      </f7-nav-left>
-      <f7-nav-title sliding>Para Marta</f7-nav-title>
-      <f7-nav-right>
-        <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="right"></f7-link>
-      </f7-nav-right>
-      <f7-nav-title-large>Para Marta</f7-nav-title-large>
-    </f7-navbar>
+
+    <f7-navbar >
+    <f7-nav-left>
+      <f7-link icon-material="menu" panel-open="left"></f7-link>
+    </f7-nav-left>
+    <f7-nav-title>
+      <img src="/assets/img/logo_vamoh.png" alt="Vamoh Logo" style="height: 20px;">
+    </f7-nav-title >
+    <f7-nav-right>
+      <f7-link icon-material="notifications" panel-open="right"></f7-link>
+    </f7-nav-right> 
+  </f7-navbar>
+  
+    <f7-searchbar search-container=".search-list" search-in=".item-title" placeholder="Buscar panorama">
+      <f7-link style="margin:0 10px;" icon-material="tune" popup-open="#filter-popup"></f7-link>
+    </f7-searchbar>
+
     <!-- Toolbar-->
     <f7-toolbar bottom>
-      <f7-link>Left Link</f7-link>
-      <f7-link>Right Link</f7-link>
+      <barra />
     </f7-toolbar>
     <!-- Page content-->
     <f7-block strong>
@@ -24,6 +31,10 @@
 
       <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
     </f7-block>
+
+    <f7-block-title>Carrusel de tarjetas</f7-block-title>
+   <panorama-carrousel></panorama-carrousel>
+
     <f7-block-title>Navigation</f7-block-title>
     <f7-list>
       <f7-list-item link="/about/" title="About"></f7-list-item>

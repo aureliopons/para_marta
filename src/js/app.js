@@ -26,5 +26,14 @@ const app = createApp(App);
 // Register Framework7 Vue components
 registerComponents(app);
 
+import MenuIzdo from '../components/menu_izdo.vue';
+import Barra from '../components/barra.vue';
+import PanoramaCard from '../components/PanoramaCard.vue';
+import PanoramaCarrousel from '../components/PanoramaCarrousel.vue';
+app.component('MenuIzdo', MenuIzdo);
+app.component('Barra', Barra);
+app.component('PanoramaCard', PanoramaCard);
+app.component('PanoramaCarrousel', PanoramaCarrousel);
+
 // Mount the app
 app.mount('#app');
