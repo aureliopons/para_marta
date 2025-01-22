@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import PanoramaCardFull from '../components/PanoramaCardFull.vue';
+
+</script>
+
 
 import barra from './barra.vue'<template>
   <f7-page name="home">
@@ -24,15 +29,32 @@ import barra from './barra.vue'<template>
       <barra />
     </f7-toolbar>
     <!-- Page content-->
+
     <f7-block strong>
-      <p> holi This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
-
-      <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
-
-      <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
+      <f7-row style="gap: 11px; justify-content: flex-start">
+       
+          <f7-button fill raised Distancia="#distancia" class="btn-small">Distancia</f7-button>
+        
+          <f7-button fill raised Fecha="#fecha" class="btn-small">Fecha</f7-button>
+        
+          <f7-button fill raised Categoria="#categoria" class="btn-small">Categoría</f7-button>
+        
+          <f7-button fill raised Precio="#precio" class="btn-small">Precio</f7-button>
+        
+      </f7-row>
     </f7-block>
 
-    <f7-block-title>Carrusel de tarjetas</f7-block-title>
+
+  <panorama-card-full></panorama-card-full>
+
+    <f7-block-title style="display: flex; flex-direction:row ; justify-content: space-between; align-items: center; ">
+      <h2>Lo más Hot <i class="icon f7-icons card-icon color-orange">sun_max_fill</i></h2> 
+      <a href="#">Ver más</a></f7-block-title>
+   <panorama-carrousel></panorama-carrousel>
+   
+   <f7-block-title style="display: flex; flex-direction:row ; justify-content: space-between; align-items: center; ">
+      <h2>Lo que se viene HOY!</h2> 
+      <a href="#">Ver más</a></f7-block-title>
    <panorama-carrousel></panorama-carrousel>
 
     <f7-block-title>Navigation</f7-block-title>
@@ -81,3 +103,19 @@ import barra from './barra.vue'<template>
     </f7-list>
   </f7-page>
 </template>
+
+<style>
+.discount{
+  display: block;
+  background-color: #2D9A5F;
+  border-radius: 0 10px 10px 0;
+  padding: 3px 10px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 6px 0px 0px 0px;
+
+
+}
+
+</style>
