@@ -8,11 +8,14 @@ import Framework7 from 'framework7/lite-bundle';
 import Framework7Vue, { registerComponents } from 'framework7-vue/bundle';
 
 // Import Framework7 Styles
-import 'framework7/framework7-bundle.css';
+//import 'framework7/framework7-bundle.css';
+import 'framework7/css/bundle';
 
 // Import Icons and App Custom Styles
 import '../css/icons.css';
 import '../css/app.css';
+import '../css/flexboxgrid.css';
+import '../css/spaces.css';
 
 // Import App Component
 import App from '../components/app.vue';

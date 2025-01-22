@@ -1,5 +1,5 @@
 {
-    "name": "framework7-v6-vue-split",
+    "name": "para_marta",
     "private": true,
     "version": "2.0.0",
     "scripts": {
@@ -13,9 +13,9 @@
     },
     "dependencies": {
         "dom7": "^3.0.0",
-        "framework7": "^6.3.16",
+        "framework7": "^8.3.2",
         "framework7-icons": "^5.0.5",
-        "framework7-vue": "^6.3.16",
+        "framework7-vue": "^8.3.2",
         "material-icons": "^1.10.6",
         "skeleton-elements": "^3.5.0",
         "swiper": "^6.8.4",

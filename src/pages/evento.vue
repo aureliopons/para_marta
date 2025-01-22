@@ -2,6 +2,12 @@
   <f7-page name="evento">
     <f7-navbar title="Evento" back-link="Back"></f7-navbar>
     <f7-block-title>Evento</f7-block-title>
+    <f7-block>
+      <div class="grid grid-cols-2 grid-gap">
+        <div style="background:#500" white class="ph-xl pv-xs">2 cols</div>
+        <div style="background:#050" white class="ph-xl pv-xs">2 cols</div>
+      </div>
+    </f7-block>
     <f7-block strong>
       <p>Fugiat perspiciatis excepturi, soluta quod non ullam deleniti. Nobis sint nemo consequuntur, fugiat. Eius perferendis animi autem incidunt vel quod tenetur nostrum, voluptate omnis quasi quidem illum consequuntur, a, quisquam.</p>
       <p>Laudantium neque magnam vitae nemo quam commodi, in cum dolore obcaecati laborum, excepturi harum, optio qui, consequuntur? Obcaecati dolor sequi nesciunt culpa quia perspiciatis, reiciendis ex debitis, ut tenetur alias.</p>
