@@ -33,10 +33,12 @@ import MenuIzdo from '../components/menu_izdo.vue';
 import Barra from '../components/barra.vue';
 import PanoramaCard from '../components/PanoramaCard.vue';
 import PanoramaCarrousel from '../components/PanoramaCarrousel.vue';
+import PanoramaCardFull from '../components/PanoramaCardFull.vue';
 app.component('MenuIzdo', MenuIzdo);
 app.component('Barra', Barra);
 app.component('PanoramaCard', PanoramaCard);
 app.component('PanoramaCarrousel', PanoramaCarrousel);
+app.component('PanoramCardFull', PanoramaCardFull);
 
 // Mount the app
 app.mount('#app');
