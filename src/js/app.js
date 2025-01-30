@@ -14,8 +14,8 @@ import 'framework7/css/bundle';
 // Import Icons and App Custom Styles
 import '../css/icons.css';
 import '../css/app.css';
-import '../css/flexboxgrid.css';
-import '../css/spaces.css';
+import '../css/flexboxgrid.css'; //http://flexboxgrid.com/
+import '../css/spaces.css'; //https://github.com/badabam/css-spaces
 
 // Import App Component
 import App from '../components/app.vue';
