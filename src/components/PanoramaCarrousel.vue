@@ -28,7 +28,7 @@ export default {
   display: none;
 }
 .swiper-wrapper{
-  height: 205px;
+  height: 220px;
 }
 </style>
 

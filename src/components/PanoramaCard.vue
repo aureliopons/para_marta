@@ -1,35 +1,36 @@
 <template>
 
-  <f7-card style="padding:2px; width:140px; margin:0px;">
+  <f7-card class="p-xxxs m-0" style="border-radius: var(--spaces-xs); width:140px; box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);">
     <f7-card-header
       valign="bottom"
-      style="border:0px solid #fff;border-radius:5px; height:98px; color:#fff; background-size: cover; background-image: url(/assets/img/event-image.jpeg)"
+      class="b-0"
+      style="border-radius:var(--spaces-xs); height:98px; color:var(--f7-white); background-size: cover; background-image: url(/assets/img/event-image.jpeg)"
       >
-      <i style="position:absolute; right:6px; top:6px;" class="icon f7-icons card-icon color-white">heart_fill</i>
+      <i style="position:absolute; right:var(--spaces-xxs); top:var(--spaces-xxs);" class="icon f7-icons card-icon color-white">heart_fill</i>
       </f7-card-header>
-    <f7-card-content style="margin: 0px; padding: 3px 0px;">
-      <h3>Concierto de Baterista</h3>
-      <div style="display: flex; flex-direction: row; gap:4px;">
-        <p class="hastag">#Evento</p><p class="hastag">#Concierto</p>
+    <f7-card-content class="m-0 pt-xs pb-xs">
+      <h4>Concierto de Baterista</h4>
+      <div class="row top-xs gap-xxs">
+        <p class="hastag-blue">#Evento</p><p class="hastag-blue">#Concierto</p>
       </div>
-      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-        <div style="display: flex; flex-direction: row; gap:2px; align-items: center;"> 
+      <div class="row between-xs middle-xs ">
+        <div class="row between-xs middle-xs "> 
           <div class="circle-image"><img src="/assets/img/logo-ambar.png" alt=""></div>
-          <h4>Club Ambar</h4>
+          <h5>Club Ambar</h5>
         </div>
-        <div style="display: flex; flex-direction: row; gap:2px; align-items: center;">
+        <div class="row between-xs middle-xs ">
           <i class="icon f7-icons card-icon color-yellow">star_fill</i>
-          <h4>5,5</h4>
+          <h5>5,5</h5>
         </div>
       </div>
-      <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-        <div style="display: flex; flex-direction: row; gap:2px; align-items: center;"> 
+      <div class="row between-xs middle-xs ">
+        <div class="row between-xs middle-xs "> 
           <i class="icon f7-icons card-icon">placemark_fill</i>
-          <h4>2 Km</h4>
+          <h5>2 Km</h5>
         </div>
-        <div style="display: flex; flex-direction: row; gap:2px; align-items: center;">
+        <div class="row between-xs middle-xs ">
           <i class="icon f7-icons card-icon">calendar</i>
-          <h4>09/09</h4>
+          <h5>09/09</h5>
         </div>
       </div>
       <p class="price poppins-semibold">700 EXP</p>
@@ -43,50 +44,3 @@ export default {
   name: 'PanoramaCard'
 };
 </script>
-
-<style>
-.hastag{
-  background-color: #E0F0FF;
-  border:1px solid var(--f7-secondary-blue);
-  border-radius: 2px;
-  font-size:10px;
-  line-height: 15px;
-  font-weight: 600;
-  padding: 0px 5px;
-  margin:0px;
-  color: var(--f7-secondary-blue);
-}
-.circle-image{
-  width: 16px; 
-  height: 16px; 
-  border-radius: 50%;
-  overflow: hidden; 
-}
-.circle-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.card-icon{
-  margin-top:-2px;
-  font-size: 15px;
-}
-.color-yellow{
-  color:#FFB930 !important;
-  font-size: 10px;
-}
-
-.price{
-  width: 100%;
-  text-align: center;
-  font-size:14px;
-  font-weight: 900;
-  background: linear-gradient(180deg, #B68E42, #F4B130);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0px;
-}
-
-</style>

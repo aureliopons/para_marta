@@ -34,11 +34,19 @@ import Barra from '../components/barra.vue';
 import PanoramaCard from '../components/PanoramaCard.vue';
 import PanoramaCarrousel from '../components/PanoramaCarrousel.vue';
 import PanoramaCardFull from '../components/PanoramaCardFull.vue';
+import PanoramaCardHalf from '../components/PanoramaCardHalf.vue';
+import CardPublicidad from '../components/CardPublicidad.vue';
+import SliderEvento from '../components/SliderEvento.vue';
+import PanoramaCardFullEvento from '../components/PanoramaCardFullEvento.vue';
 app.component('MenuIzdo', MenuIzdo);
 app.component('Barra', Barra);
 app.component('PanoramaCard', PanoramaCard);
 app.component('PanoramaCarrousel', PanoramaCarrousel);
 app.component('PanoramCardFull', PanoramaCardFull);
+app.component('PanoramaCardHalf', PanoramaCardHalf);
+app.component ('CardPublicidad', CardPublicidad);
+app.component('SliderEvento', SliderEvento);
+app.component('PanoramaCardFullEvento', PanoramaCardFullEvento)
 
 // Mount the app
 app.mount('#app');

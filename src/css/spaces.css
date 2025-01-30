@@ -1,8 +1,8 @@
 :root {
-    --spaces-xxxs: 1px; 
-    --spaces-xxs: 2px; 
-    --spaces-xs: 4px; 
-    --spaces-s: 8px; 
+    --spaces-xxxs: 2px; 
+    --spaces-xxs: 4px; 
+    --spaces-xs: 8px; 
+    --spaces-s: 10px; 
     --spaces-m: 12px; 
     --spaces-l: 16px; 
     --spaces-xl: 24px; 
@@ -680,3 +680,8 @@
 .w66 { width: 66.66667% !important; }
 
 .w100 { width: 100% !important; }
+
+.gap-s{gap:var(--spaces-s)}
+.gap-xxs{gap:var(--spaces-xxs)}
+.gap-m{gap:var(--spaces-m)}
+.gap-l{gap:var(--spaces-l)}

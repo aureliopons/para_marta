@@ -95,7 +95,9 @@ a{
 }
 
 /* typography */
-
+p{
+  font-size: var(--spaces-s);
+}
 h2{
   font-size: 20px;
   font-weight: 700;
@@ -104,13 +106,17 @@ h2{
 }
 h3{
   font-weight: 600;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 15px;
   margin: 0px;
 }
 h4{
+  font-size: var(--spaces-s);
+  margin: 0px;
+}
+h5{
   font-size: 9px;
-  margin: 4px;
+  margin: var(--spaces-xxs);
 }
 
 
@@ -122,3 +128,87 @@ h4{
   color: var(--f7-white);
   text-transform: none;
 }
+
+/* cards */
+.hastag-blue{
+  background-color: #E0F0FF;
+  border:1px solid var(--f7-secondary-blue);
+  border-radius: var(--spaces-xxxs);
+  font-size:10px;
+  line-height: var(--spaces-l);
+  font-weight: 600;
+  padding: 0px 5px;
+  margin:0px;
+  color: var(--f7-secondary-blue);
+}
+.hastag-green{
+  background-color: #CEFBE2;
+  border:1px solid #469068;
+  border-radius: var(--spaces-xxxs);
+  font-size:10px;
+  line-height: var(--spaces-l);
+  font-weight: 600;
+  padding: 0px 5px;
+  margin:0px;
+  color: #469068;
+}
+.circle-image{
+  width: var(--spaces-l); 
+  height: var(--spaces-l); 
+  border-radius: 50%;
+  overflow: hidden; 
+}
+.circle-image-large{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  overflow: hidden; 
+}
+.circle-image-large img,
+.circle-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-icon{
+  margin-top:-2px;
+  font-size:var(--spaces-l);
+}
+.color-yellow{
+  color:#FFB930 !important;
+  font-size: var(--spaces-m);
+}
+
+.price{
+  width: 100%;
+  text-align: center;
+  font-size:var(--spaces-l);
+  font-weight: 900;
+  background: linear-gradient(180deg, #B68E42, #F4B130);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+.discount{
+  display: block;
+    background-color: #2D9A5F;
+    border-radius: 0 10px 10px 0;
+    padding: 3px 10px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 6px 0px 0px 0px;
+}
+.discount-light{
+  display: inline;
+    background-color: #CEFBE294;
+    border-radius: 0 10px 10px 0;
+    padding: 3px 10px;
+    color: #469068;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 6px 0px 0px 0px;
+    border: 1px solid #96E3B9;
+}
+

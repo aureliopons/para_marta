@@ -1,14 +1,8 @@
-<script setup lang="ts">
-import PanoramaCardFull from '../components/PanoramaCardFull.vue';
-
-</script>
-
-
 import barra from './barra.vue'<template>
   <f7-page name="home">
     <!-- Top Navbar -->
 
-    <f7-navbar >
+    <f7-navbar>
     <f7-nav-left>
       <f7-link icon-material="menu" panel-open="left"></f7-link>
     </f7-nav-left>
@@ -30,8 +24,8 @@ import barra from './barra.vue'<template>
     </f7-toolbar>
     <!-- Page content-->
 
-    <f7-block strong>
-      <f7-row style="gap: 11px; justify-content: flex-start">
+    <f7-block strong class="mb-l">
+      <f7-row class="row between-xs ">
        
           <f7-button fill raised Distancia="#distancia" class="btn-small">Distancia</f7-button>
         
@@ -44,19 +38,37 @@ import barra from './barra.vue'<template>
       </f7-row>
     </f7-block>
 
-
   <panorama-card-full></panorama-card-full>
 
-    <f7-block-title style="display: flex; flex-direction:row ; justify-content: space-between; align-items: center; ">
+    <f7-block-title class="row between-xs middle-xs">
       <h2>Lo más Hot <i class="icon f7-icons card-icon color-orange">sun_max_fill</i></h2> 
       <a href="#">Ver más</a></f7-block-title>
-   <panorama-carrousel></panorama-carrousel>
-   
-   <f7-block-title style="display: flex; flex-direction:row ; justify-content: space-between; align-items: center; ">
+    <panorama-carrousel></panorama-carrousel>
+    
+    <f7-block-title class="row between-xs middle-xs">
       <h2>Lo que se viene HOY!</h2> 
       <a href="#">Ver más</a></f7-block-title>
-   <panorama-carrousel></panorama-carrousel>
+    <panorama-carrousel></panorama-carrousel>
 
+    <f7-block-title>
+      <h2>Recomendados para ti</h2></f7-block-title>
+    <panorama-card-half></panorama-card-half>
+
+    <f7-block-title class="row between-xs middle-xs">
+      <h2>Deportes y Aire Libre</h2> 
+      <a href="#">Ver más</a></f7-block-title>
+    <panorama-carrousel></panorama-carrousel>
+
+    <f7-block-title class="row between-xs middle-xs">
+      <p style="font-weight: 400;">Publicidad</p> 
+    </f7-block-title>
+    <card-publicidad></card-publicidad>
+
+    <f7-block-title class="row between-xs middle-xs">
+      <h2>Gastronomía</h2> 
+      <a href="#">Ver más</a></f7-block-title>
+    <panorama-carrousel></panorama-carrousel>
+    <!--
     <f7-block-title>Navigation</f7-block-title>
     <f7-list>
       <f7-list-item link="/about/" title="About"></f7-list-item>
@@ -100,8 +112,8 @@ import barra from './barra.vue'<template>
         title="Request Data & Load"
         link="/request-and-load/user/123456/"
       ></f7-list-item>
-    </f7-list>
-  </f7-page>
+    </f7-list> -->
+  </f7-page> 
 </template>
 
 <style>
