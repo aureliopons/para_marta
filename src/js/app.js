@@ -38,6 +38,7 @@ import PanoramaCardHalf from '../components/PanoramaCardHalf.vue';
 import CardPublicidad from '../components/CardPublicidad.vue';
 import SliderEvento from '../components/SliderEvento.vue';
 import PanoramaCardFullEvento from '../components/PanoramaCardFullEvento.vue';
+import CardEventPerfil from '../components/CardEventPerfil.vue';
 app.component('MenuIzdo', MenuIzdo);
 app.component('Barra', Barra);
 app.component('PanoramaCard', PanoramaCard);
@@ -47,6 +48,7 @@ app.component('PanoramaCardHalf', PanoramaCardHalf);
 app.component ('CardPublicidad', CardPublicidad);
 app.component('SliderEvento', SliderEvento);
 app.component('PanoramaCardFullEvento', PanoramaCardFullEvento)
+app.component('CardEventPerfil', CardEventPerfil);
 
 // Mount the app
 app.mount('#app');

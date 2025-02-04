@@ -8,6 +8,11 @@
   padding-right: 2rem;
   padding-left: 2rem;
 }
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .row {
   box-sizing: border-box;

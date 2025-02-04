@@ -84,7 +84,7 @@
       // Framework7 Parameters
       const f7params = {
         name: 'My App', // App name
-        theme: 'auto', // Automatic theme detection
+        theme: 'md', // Automatic theme detection
 
 
         id: 'io.framework7.myapp', // App bundle ID

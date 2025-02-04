@@ -1,3 +1,8 @@
+/*https://fonts.google.com/icons*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 :root {
   --f7-theme-color: #00315F; 
   --f7-black:#212121;
@@ -23,9 +28,8 @@
   --f7-card-header-padding-horizontal: 2px;
 }
 
-/*https://fonts.google.com/icons*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* iOS Cordova Tweak */
 .device-cordova.device-ios {
   height: 100vh;
@@ -98,13 +102,13 @@ a{
 p{
   font-size: var(--spaces-s);
 }
-h2{
+h2, .h2{
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   margin: 0px;
 }
-h3{
+h3, .h3{
   font-weight: 600;
   font-size: 14px;
   line-height: 15px;
@@ -119,6 +123,7 @@ h5{
   margin: var(--spaces-xxs);
 }
 
+/* button */
 
 .btn-small{
   font-size: 13px;
@@ -127,6 +132,17 @@ h5{
   background-color: var(--f7-theme-color);
   color: var(--f7-white);
   text-transform: none;
+}
+
+.btn-follow{
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 15px;
+  background-color:#4084C5;
+  color: var(--f7-white);
+  text-transform: none;
+  padding: var(--spaces-xxxs), var(--spaces-xxs);
+  width: 100%;
 }
 
 /* cards */
@@ -210,5 +226,27 @@ h5{
     font-weight: 600;
     margin: 6px 0px 0px 0px;
     border: 1px solid #96E3B9;
+}
+
+.bronce{
+  background: linear-gradient(180deg, #48340B, #FF9D43);
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  width: auto;
+  height: auto; 
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bronce p{ font-size: 20px;}
+.title-bronce{
+  background: linear-gradient(180deg, #48340B, #FF9D43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+font-weight: 700;
 }
 

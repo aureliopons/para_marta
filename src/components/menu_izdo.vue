@@ -1,6 +1,5 @@
 <template>
   <f7-page>
-    <f7-navbar title="UX/UI"></f7-navbar>
     <f7-block-title>On-boarding</f7-block-title>
     <f7-list>
       <f7-list-item link="/login/"          view=".view-main" panel-close title="Selector login"></f7-list-item>
@@ -18,7 +17,29 @@
       <f7-list-item link="/filtros/"        title="Filtros"></f7-list-item>
     </f7-list>
 
-    <f7-block-title>Páginas</f7-block-title>
+    <f7-block-title><h5></h5>PRINCIPAL</f7-block-title>
+    <f7-list menu-list strong-ios outline-ios>
+      <f7-list-item link="/home/" view=".view-main" panel-close title="Home" :selected="selected === 'home'" @click="() => (selected = 'home')">
+        <template #media>
+          <f7-icon md="material:home" ios="f7:house_fill" />
+        </template>
+      </f7-list-item>
+      <f7-list-item link="/evento/" view=".view-main" panel-close title="Evento" :selected="selected === 'evento'" @click="() => (selected = 'evento')">
+        <template #media>
+          <f7-icon md="material:evento" ios="f7:sticker" />
+        </template>
+      </f7-list-item>
+      <f7-list-item link="/perfil/" view=".view-main" panel-close title="Perfil" :selected="selected === 'perfil'" @click="() => (selected = 'perfil')">
+        <template #media>
+          <f7-icon md="material:perfil" ios="f7:sticker" />
+        </template>
+      </f7-list-item>
+      <f7-list-item link="/crear/" view=".view-main" panel-close title="Crear Evento" :selected="selected === 'crear'" @click="() => (selected = 'crear')">
+        <template #media>
+          <f7-icon md="material:crear" ios="f7:sticker" />
+        </template>
+      </f7-list-item>
+    </f7-list>
     <f7-list>
       <f7-list-item link="/home/"   view=".view-main" panel-close title="Home"></f7-list-item>
       <f7-list-item link="/evento/" view=".view-main" panel-close title="Evento"></f7-list-item>
